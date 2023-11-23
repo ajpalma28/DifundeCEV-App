@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".AcercaDeActivity">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
+            android:text="URL"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textUrl" />
+
+        <TextView
+            android:id="@+id/textUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:text="Introduzca aquí la URL de la entrada a compartir"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cbHdadRocio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROCÍO"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp"/>
+
+        <CheckBox
+            android:id="@+id/cbHdadCarmen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARMEN"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText"
+            app:layout_constraintStart_toEndOf="@id/cbHdadRocio"/>
+
+        <CheckBox
+            android:id="@+id/cbHdadAlcora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ALCORA"
+            android:layout_marginStart="15dp"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextText"
+            app:layout_constraintStart_toEndOf="@id/cbHdadCarmen"/>
+
+        <CheckBox
+            android:id="@+id/cbHdadBorriquita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BORRIQUITA"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadRocio"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <CheckBox
+            android:id="@+id/cbHdadEsperanza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ESPERANZA"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadRocio"
+            app:layout_constraintStart_toEndOf="@id/cbHdadBorriquita"/>
+
+        <CheckBox
+            android:id="@+id/cbHdadCautivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAUTIVO"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadAlcora"
+            app:layout_constraintStart_toEndOf="@id/cbHdadEsperanza"/>
+
+        <CheckBox
+            android:id="@+id/cbHdadRosario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERA-CRUZ"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadBorriquita"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <CheckBox
+            android:id="@+id/cbHdadPiedad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PIEDAD"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadCautivo"
+            app:layout_constraintStart_toEndOf="@id/cbHdadRosario"/>
+
+        <CheckBox
+            android:id="@+id/cbHdadJesus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NAZARENO"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadCautivo"
+            app:layout_constraintStart_toEndOf="@id/cbHdadPiedad"/>
+
+        <CheckBox
+            android:id="@+id/cbHdadDolores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOLORES"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadRosario"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <CheckBox
+            android:id="@+id/cbParroquia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PARROQUIA"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadPiedad"
+            app:layout_constraintStart_toEndOf="@id/cbHdadDolores"/>
+
+        <CheckBox
+            android:id="@+id/cbAyuntamiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AYTO"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadPiedad"
+            app:layout_constraintStart_toEndOf="@id/cbParroquia"/>
+
+        <CheckBox
+            android:id="@+id/cbRMartin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R. MARTÍN"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbHdadDolores"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <CheckBox
+            android:id="@+id/cbBMSMdelAlcor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BM STA Mª DEL ALCOR"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbParroquia"
+            app:layout_constraintStart_toEndOf="@id/cbRMartin"/>
+
+        <CheckBox
+            android:id="@+id/cbBCTMerced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BCT MERCED"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbRMartin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <CheckBox
+            android:id="@+id/cbSFJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAN FRANCISCO JAVIER"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbRMartin"
+            app:layout_constraintStart_toEndOf="@id/cbBCTMerced"/>
+
+        <CheckBox
+            android:id="@+id/cbMisericordia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MISERICORDIA"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbBCTMerced"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <CheckBox
+            android:id="@+id/cbCorazonDeJesus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CORAZÓN DE JESÚS"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbBCTMerced"
+            app:layout_constraintStart_toEndOf="@id/cbMisericordia"/>
+
+        <CheckBox
+            android:id="@+id/cbArchiSevilla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ARZOBISPADO"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbMisericordia"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <CheckBox
+            android:id="@+id/cbConsejo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONSEJO"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbMisericordia"
+            app:layout_constraintStart_toEndOf="@id/cbArchiSevilla"/>
+
+        <CheckBox
+            android:id="@+id/cbReyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REYES"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="100dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbMisericordia"
+            app:layout_constraintStart_toEndOf="@id/cbConsejo"/>
+
+        <CheckBox
+            android:id="@+id/cbLeonRedondo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEÓN REDONDO"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/cbArchiSevilla"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <TextView
+            android:id="@+id/textOtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            tools:layout_editor_absoluteX="30dp"
+            android:text="Otros:"
+            app:layout_constraintTop_toBottomOf="@id/cbLeonRedondo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <EditText
+            android:id="@+id/editOtros"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textOtros"
+            app:layout_constraintTop_toBottomOf="@+id/cbLeonRedondo" />
+
+        <Button
+            android:id="@+id/btnX"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="X"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/editOtros"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="30dp" />
+
+        <Button
+            android:id="@+id/btnIG"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="IG"
+            app:layout_constraintStart_toEndOf="@+id/btnX"
+            app:layout_constraintTop_toBottomOf="@+id/editOtros" />
+
+        <Button
+            android:id="@+id/btnTG"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Telegram"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/btnIG"
+            app:layout_constraintTop_toBottomOf="@+id/editOtros" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

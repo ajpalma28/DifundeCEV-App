@@ -15,7 +15,7 @@ import com.ajptech.difundecevapp.ui.theme.DifundeCEVAppTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
+        /*setContent {
             DifundeCEVAppTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
@@ -25,11 +25,12 @@ class MainActivity : ComponentActivity() {
                     Greeting("Android")
                 }
             }
-        }
+        }*/
+        setContentView(R.layout.activity_principal)
     }
 }
 
-@Composable
+/*@Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
@@ -43,4 +44,4 @@ fun GreetingPreview() {
     DifundeCEVAppTheme {
         Greeting("Android")
     }
-}
+}*/
