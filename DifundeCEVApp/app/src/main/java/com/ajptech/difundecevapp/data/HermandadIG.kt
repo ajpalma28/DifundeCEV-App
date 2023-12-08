@@ -42,7 +42,7 @@ enum class HermandadIG {
             NOVALUE -> ""
             REYES -> "@nazarenoviso "
             ROCIO -> "@rociodeelviso "
-            CARMEN -> "@parroquiasantamariadelalcor "
+            CARMEN -> "@hdadcarmenviso "
             PATRONA -> "@stamariaalcor "
             BORRIQUITA -> "@sagradaentradaviso "
             ESPERANZA -> "@redencionyesperanza "
