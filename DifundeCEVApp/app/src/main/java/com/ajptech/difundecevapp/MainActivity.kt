@@ -122,7 +122,6 @@ class MainActivity : ComponentActivity() {
                     val txtMostrar = Toast.makeText(this, errorInputOtros, Toast.LENGTH_LONG)
                     txtMostrar.show()
                 }
-                auxiliares.reiniciaProceso(checks,textoOtros,entradaUrl,noticiasDef[0].enlace)
             } catch (e2: InvalidLenghtOtrosException) {
                 Handler(Looper.getMainLooper()).post {
                     val txtMostrar = Toast.makeText(this, errorLengthOtros, Toast.LENGTH_LONG)
@@ -151,13 +150,13 @@ class MainActivity : ComponentActivity() {
                 lifecycleScope.launch {
                     auxiliares.compartirEnInstagram(imprime, applicationContext, noticiasDef[0].imagen)
                 }
+                auxiliares.reiniciaProceso(checks,textoOtros,entradaUrl,noticiasDef[0].enlace)
 
             } catch (e1: InvalidInputOtrosException) {
                 Handler(Looper.getMainLooper()).post {
                     val txtMostrar = Toast.makeText(this, errorInputOtros, Toast.LENGTH_LONG)
                     txtMostrar.show()
                 }
-                auxiliares.reiniciaProceso(checks,textoOtros,entradaUrl,noticiasDef[0].enlace)
             } catch (e2: InvalidLenghtOtrosException) {
                 Handler(Looper.getMainLooper()).post {
                     val txtMostrar = Toast.makeText(this, errorLengthOtros, Toast.LENGTH_LONG)
