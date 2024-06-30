@@ -42,7 +42,7 @@ enum class HermandadTW {
             NOVALUE -> ""
             REYES -> "@NazarenoViso "
             ROCIO -> "@HdadRocioViso "
-            CARMEN -> "@HermandadCarmen "
+            CARMEN -> "@HdadCarmenViso "
             PATRONA -> "@StaMariaAlcor "
             BORRIQUITA -> "@SagradaEntradaV "
             ESPERANZA -> "@Esperanza_Viso "

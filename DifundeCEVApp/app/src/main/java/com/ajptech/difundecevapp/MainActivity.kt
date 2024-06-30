@@ -22,13 +22,13 @@ import kotlinx.coroutines.runBlocking
 
 class MainActivity : ComponentActivity() {
 
-    var objetos: ActivityPrincipalBinding? = null
+    private var objetos: ActivityPrincipalBinding? = null
 
-    val noticiasDef = mutableListOf<Noticia>()
+    private val noticiasDef = mutableListOf<Noticia>()
 
-    val checks = mutableListOf<CheckBox>()
+    private val checks = mutableListOf<CheckBox>()
 
-    val auxiliares = App()
+    private val auxiliares = App()
 
     private fun main() = runBlocking {
         val noticias = obtenerTitularesDeNoticias()
